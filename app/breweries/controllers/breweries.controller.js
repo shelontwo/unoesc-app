@@ -21,7 +21,7 @@ exports.find = function(req,res){
 exports.create = function(req,res){
 	var brewery = new Brewery(req.body);
 
-	salvando(brewery, req, res, 'Criadooooo');
+	salvando(brewery, req, res, 'Criado :)');
 }
 
 var salvando = function(brewery, req, res, msg){
@@ -42,7 +42,9 @@ exports.update = function(req,res){
 	var brewery = req.brewery;
 	brewery.name = req.body.name;
 	brewery.description = req.body.description;
-	salvando(brewery, req, res, 'Alteradooo');
+	brewery.ativo = req.body.ativo;
+	brewery.updated =  new Date();
+	salvando(brewery, req, res, 'Alterado :)');
 }
 exports.delete = function(req,res){
 	var brewery = req.brewery;

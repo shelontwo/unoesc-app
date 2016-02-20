@@ -11,6 +11,19 @@ var BrewerySchema = new Schema({
 	},
 	description :{
 		type: String
+	},
+	ativo :{
+		type: Boolean,
+		required: true,
+		default: true
+	},
+	created: { 
+		type: Date, 
+		default: Date.now 
+	},
+	updated: { 
+		type: Date, 
+		default: Date.now 
 	}
 });
 

@@ -5,18 +5,22 @@
   "main": "nodemon server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "SET NODE_ENV=development& nodemon server.js"
+    "start": "SET NODE_ENV=development&& nodemon server.js"
   },
   "keywords": [
     "app",
     "unoesc"
   ],
-  "author": "Gui Seek",
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/shelontwo/unoesc-app.git"
+  },
+  "author": "Evandro Diego Erlo",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
-    "lodash": "^4.3.0",
+    "lodash": "^4.3.0", 
     "mongoose": "^4.4.3"
   }
 }
